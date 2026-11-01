@@ -1,0 +1,49 @@
+/* Tokens de diseño. Modo claro por defecto; .dark los sustituye. */
+:root {
+  --bg: #faf8f5;
+  --surface: #ffffff;
+  --surface-2: #f3efe9;
+  --ink: #1f1b24;
+  --muted: #6b6573;
+  --border: #e7e1d8;
+  --primary: #5b4bdb;
+  --primary-hover: #4d3fc4;
+  --primary-soft: #ece9fc;
+  --on-primary: #ffffff;
+  --accent: #ff6b5e;
+  --success: #2fa36b;
+  --warning: #e3a21a;
+  --danger: #d9453d;
+  /* Para texto y fondos con texto: --danger no llega a AA (4,5) en claro. */
+  --danger-strong: #b8342d;
+  --on-danger: #ffffff;
+  --partner-a: #5b4bdb;
+  --partner-b: #1fa3a3;
+  --overlay: rgba(31, 27, 36, 0.45);
+  --shadow-soft: 0 1px 2px rgba(31, 27, 36, 0.06), 0 8px 24px rgba(31, 27, 36, 0.06);
+  color-scheme: light;
+}
+
+.dark {
+  --bg: #121014;
+  --surface: #1b181f;
+  --surface-2: #25212b;
+  --ink: #f4f1f7;
+  --muted: #a79fb3;
+  --border: #302b38;
+  --primary: #8c7cff;
+  --primary-hover: #a093ff;
+  --primary-soft: #221d3c;
+  --on-primary: #121014;
+  --accent: #ff8176;
+  --success: #4cc38a;
+  --warning: #f0b33a;
+  --danger: #f06b63;
+  --danger-strong: #f06b63;
+  --on-danger: #121014;
+  --partner-a: #8c7cff;
+  --partner-b: #3cc4c4;
+  --overlay: rgba(0, 0, 0, 0.6);
+  --shadow-soft: 0 1px 2px rgba(0, 0, 0, 0.4), 0 8px 24px rgba(0, 0, 0, 0.35);
+  color-scheme: dark;
+}
