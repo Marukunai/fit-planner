@@ -9,7 +9,18 @@ const toastVars = {
   '--border-radius': '16px',
 } as CSSProperties
 
+// Abajo y por encima de la barra de pestañas (móvil), para no tapar el contenido.
+const toastOffset = { bottom: 'calc(5.5rem + env(safe-area-inset-bottom))' }
+
 export function Toaster() {
   const theme = useThemeStore((state) => state.theme)
-  return <Sonner theme={theme} position="top-center" style={toastVars} />
+  return (
+    <Sonner
+      theme={theme}
+      position="bottom-center"
+      offset={toastOffset}
+      mobileOffset={toastOffset}
+      style={toastVars}
+    />
+  )
 }
